@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 		'@vueuse/nuxt',
 		'@nuxtjs/google-fonts',
 		'nuxt-icon',
-		'nuxt-viewport'
+		'nuxt-viewport',
 	],
 	image: {
 		inject: true,

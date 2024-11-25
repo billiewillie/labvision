@@ -11,10 +11,10 @@ watch($viewport.breakpoint, (newBreakpoint, oldBreakpoint) => {
 })
 onMounted(() => {
   if (
-    $viewport.breakpoint.dep?.computed.value === 'desktopMedium'
+    $viewport.breakpoint.dep?.computed.value === 'desktop'
+    || $viewport.breakpoint.dep?.computed.value === 'desktopMedium'
     || $viewport.breakpoint.dep?.computed.value === 'desktopWide'
   ) {
-    console.log($viewport)
     $gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
 
     const images = $gsap.utils.toArray('.panel:not(.purple)');
@@ -70,7 +70,7 @@ onMounted(() => {
   <section
     id="fourth-screen"
     class="bg-foreground text-black py-16 lg:pb-24">
-    <div class="black container grid grid-cols-1 xl:grid-cols-2 gap-28 xl:gap-4 justify-between">
+    <div class="black container grid grid-cols-1 xl:grid-cols-2 gap-28 xl:gap-8 justify-between">
       <div class="text-wrap grid gap-12 relative xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 w-full xl:h-[80vh]">
         <div class="panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10">
           <h2 class="~text-[40px]/[48px] leading-[1.1] xl:text-[48px] font-extralight mb-8">
@@ -90,31 +90,53 @@ onMounted(() => {
             <li>3 лазера, 14 флюоресцентных каналов детекции</li>
           </ul>
         </div>
-        <div class="panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10">
-          <h2 class="~text-[40px]/[48px] leading-[1.1] xl:text-[48px] font-extralight mb-8">
-            Лавинные фотодиоды в качестве фотодетекторов
-          </h2>
-          <ul class="list-disc pl-4 marker:text-primary">
-            <li>максимально высокая чувствительность</li>
-            <li>низкий уровень электронного шума</li>
-            <li>напряжение на детекторах фиксировано</li>
-            <li>нет необходимости настраивать специфическое для образцов различных типов напряжение</li>
-            <li>абсолютная линейность в широком диапазоне</li>
-            <li>предсказуемая флюоресцентная компенсация независимо от расположения популяции</li>
-          </ul>
+        <div class="panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10 flex flex-col xl:flex-row gap-8">
+          <div class="basis-1/2">
+            <h2 class="~text-[18px]/[20px] leading-[1.1] mb-8 text-primary">
+              Лавинные фотодиоды в качестве фотодетекторов
+            </h2>
+            <ul class="list-disc pl-4 marker:text-primary">
+              <li>максимально высокая чувствительность</li>
+              <li>низкий уровень электронного шума</li>
+              <li>напряжение на детекторах фиксировано</li>
+              <li>нет необходимости настраивать специфическое для образцов различных типов напряжение</li>
+              <li>абсолютная линейность в широком диапазоне</li>
+              <li>предсказуемая флюоресцентная компенсация независимо от расположения популяции</li>
+            </ul>
+          </div>
+          <div class="basis-1/2">
+            <h2 class="~text-[18px]/[20px] leading-[1.1] mb-8 text-primary">
+              Шприцевой насос, управляющий подачей образца
+            </h2>
+            <ul class="list-disc pl-4 marker:text-primary">
+              <li>низкий уровень шума</li>
+              <li>плавная подача образца</li>
+              <li>волюметрический анализ абсолютных концентраций без использования дополнительных референсных частиц
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10">
-          <h2 class="~text-[40px]/[48px] leading-[1.1] xl:text-[48px] font-extralight mb-8">
-            Шприцевой насос, управляющий подачей образца
-          </h2>
-          <ul class="list-disc pl-4 marker:text-primary">
-            <li>низкий уровень шума</li>
-            <li>плавная подача образца</li>
-            <li>
-              волюметрический анализ абсолютных концентраций без использования дополнительных  референсных
-               частиц
-            </li>
-          </ul>
+        <div class="panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10 flex flex-col xl:flex-row gap-8">
+          <div class="basis-1/2">
+            <h2 class="~text-[18px]/[20px] leading-[1.1] mb-8 text-primary">
+              Твердотельные лазеры
+            </h2>
+            <ul class="list-disc pl-4 marker:text-primary">
+              <li>488 нм, 638 нм, 405 нм</li>
+              <li>оптимизированной мощности, позволяющие поддерживать работу с большинством доступных флюорохромов и
+                флюоресцентных белков
+              </li>
+            </ul>
+          </div>
+          <div class="basis-1/2">
+            <h2 class="~text-[18px]/[20px] leading-[1.1] mb-8 text-primary">
+              Широкий выбор вариантов загрузки образца
+            </h2>
+            <ul class="list-disc pl-4 marker:text-primary">
+              <li>Отдельные пробирки объемом 5, 2 и 1,5 мл</li>
+              <li>Загрузка пробирок группой до 40 единиц</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="p-wrap relative overflow-hidden top-0 h-[50vh] xl:h-[90vh] flex flex-col gap-8">
@@ -129,26 +151,19 @@ onMounted(() => {
           class="panel absolute xl:top-[160px] left-0 w-full h-full z-10 object-cover"
           alt="Проточный цитометр CELLRIVER"
           title="Проточный цитометр CELLRIVER"
-          src="/img/item-photo-6.jpg"/>
+          src="/img/item-photo-6.webp"/>
         <NuxtImg
           format="webp"
           class="panel absolute xl:top-[160px] left-0 w-full h-full object-cover"
           alt="Проточный цитометр CELLRIVER"
           title="Проточный цитометр CELLRIVER"
-          src="/img/item-photo-2.webp"/>
+          src="/img/item-photo-7.webp"/>
         <NuxtImg
           format="webp"
           class="panel purple absolute xl:top-[160px] left-0 w-full h-full z-10 object-cover"
           alt="Проточный цитометр CELLRIVER"
           title="Проточный цитометр CELLRIVER"
-          src="/img/item-photo-6.jpg"/>
-        <!--          <div class="flex flex-col md:flex-row md:items-center gap-4 justify-start">-->
-        <!--            <p>Техническая спецификация</p>-->
-        <!--            <BaseRainbowButton-->
-        <!--              variant="black">-->
-        <!--              Скачать PDF-->
-        <!--            </BaseRainbowButton>-->
-        <!--          </div>-->
+          src="/img/item-photo-8.webp"/>
       </div>
     </div>
   </section>

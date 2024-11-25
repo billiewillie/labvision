@@ -13,7 +13,7 @@ import {
 import * as z from 'zod'
 import {useId, useRuntimeConfig} from '#app'
 
-const {API_ENDPOINT}: { API_ENDPOINT: string } = useRuntimeConfig().public
+const emit = defineEmits<{ (e: 'closeDialog'): void }>()
 
 const nameId = useId()
 const contactId = useId()
@@ -64,6 +64,7 @@ const onSubmit = form.handleSubmit(async (values) => {
     toast({
       description: 'Заявка отправлена!'
     })
+    emit('closeDialog')
   } else {
     toast({
       description: 'Произошла ошибка!',
@@ -76,7 +77,7 @@ const onSubmit = form.handleSubmit(async (values) => {
 <template>
   <form
     @submit="onSubmit"
-    class="flex flex-col gap-8 bg-background w-full max-w-[400px]">
+    class="flex flex-col gap-8 bg-background w-full max-w-[440px]">
     <div class="grid gap-8">
       <FormField
         v-slot="{ componentField }"

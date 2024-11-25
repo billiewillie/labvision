@@ -5,6 +5,7 @@ import NAVIGATION from "~/data/navigation";
 import {VisuallyHidden} from "radix-vue";
 
 const isModalOpen = ref(false)
+const isContactFormModalOpen = ref(false)
 </script>
 
 <template>
@@ -35,13 +36,16 @@ const isModalOpen = ref(false)
       <SheetTrigger
         as-child
         class="2xl:hidden">
-        <BaseRainbowButton class="!py-1 !px-1">
+        <BaseRainbowButton
+          class="!py-1 !px-1">
           <Icon
             name="ic:baseline-menu"
             class="w-8 h-8"/>
         </BaseRainbowButton>
       </SheetTrigger>
-      <SheetContent side="bottom">
+      <SheetContent
+        side="bottom"
+        class="bg-background">
         <SheetHeader>
           <VisuallyHidden>
             <SheetTitle></SheetTitle>
@@ -61,25 +65,36 @@ const isModalOpen = ref(false)
           </li>
           <li>
             <DialogClose class="w-full">
-              <a
-                href="#contacts"
-                class="w-full">
-                <BaseRainbowButton class="w-full">
-                  Связаться с нами
-                </BaseRainbowButton>
-              </a>
+              <BaseRainbowButton
+                class="w-full"
+                @click="isContactFormModalOpen = true">
+                Связаться с нами
+              </BaseRainbowButton>
             </DialogClose>
           </li>
         </ul>
       </SheetContent>
     </Sheet>
-    <a
-      href="/#contacts"
+    <BaseRainbowButton
+      @click="isContactFormModalOpen = true"
       class="hidden 2xl:flex">
-      <BaseRainbowButton>
-        Связаться с нами
-      </BaseRainbowButton>
-    </a>
+      Связаться с нами
+    </BaseRainbowButton>
+    <Dialog :open="isContactFormModalOpen">
+      <DialogContent @closeDialog="isContactFormModalOpen = false">
+        <DialogHeader>
+          <VisuallyHidden>
+            <DialogTitle></DialogTitle>
+          </VisuallyHidden>
+        </DialogHeader>
+        <BaseContactForm @closeDialog="isContactFormModalOpen = false"/>
+        <DialogFooter>
+          <VisuallyHidden>
+            <DialogTitle></DialogTitle>
+          </VisuallyHidden>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   </header>
 </template>
 

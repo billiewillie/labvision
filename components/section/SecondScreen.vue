@@ -48,7 +48,7 @@ onMounted(() => {
       <div
         id="second-screen-content"
         class="relative xl:pl-16 opacity-0 flex flex-col gap-6 -right-[200px]">
-        <h2 class="text-[50px] font-extralight leading-[55px]">Проточный цитометр
+        <h2 class="~text-[32px]/[50px] font-extralight leading-[1.1]">Проточный цитометр
           <span class="text-primary">CELLRIVER</span></h2>
         <p class="text-[18px]">Первый российский проточный цитометр для широкого круга научных исследований,
           скрининговых исследований и фармацевтических разработок*.</p>

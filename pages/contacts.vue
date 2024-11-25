@@ -2,11 +2,11 @@
   <main>
 
     <section class="relative text-white z-0 overflow-hidden py-16 lg:py-24">
-      <div class="container z-30 grid lg:grid-cols-2 relative">
-        <div class="flex flex-col">
-          <h1 class="text-primary font-light text-[50px] mb-4">Контакты</h1>
-          <p class="text-[20px]/[24px] font-bold mb-4">Общество с ограниченной ответственностью «Лабвижн»</p>
-          <address class="~text-[16px]/[20px] flex flex-col gap-4 not-italic mb-4">
+      <div class="container z-30 grid xl:grid-cols-2 relative gap-8 xl:gap-8">
+        <div class="flex flex-col gap-4 xl:gap-8">
+          <h1 class="text-primary font-light text-[50px]">Контакты</h1>
+          <p class="text-[20px]/[24px] font-bold">Общество с ограниченной ответственностью «Лабвижн»</p>
+          <address class="~text-[16px]/[20px] flex flex-col gap-4 not-italic">
             197022, г. Санкт-Петербург, вн.тер.г. Муниципальный округ Аптекарский остров, ул. Льва Толстого, д. 9,
             лит. А,
             помещ. 5&#8209;H.
@@ -26,8 +26,12 @@
             </a>
           </div>
         </div>
-        <div>
-          map
+        <div class="overflow-hidden h-[300px] xl:h-full">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A50272272f0590a1ca8dfc051f3b02e0f588c6010fd6526f0e12f6d6883919310&amp;source=constructor"
+            :width="`100%`"
+            :height="`100%`"
+            frameborder="0"></iframe>
         </div>
       </div>
     </section>
