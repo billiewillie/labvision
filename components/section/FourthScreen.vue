@@ -29,7 +29,7 @@ onMounted(() => {
           toggleActions: "play none reverse none",
           invalidateOnRefresh: true,
         }
-      })
+      });
       tl.to(image, {height: 0});
     });
 
@@ -50,7 +50,7 @@ onMounted(() => {
       })
 
       tl
-        .to(text, {duration: 0.33, opacity: 1, y: "20%"})
+        .to(text, {duration: 0.33, opacity: 1, y: "30%"})
         .to(text, {duration: 0.33, opacity: 0, y: "0%"}, 0.66)
     })
 
@@ -58,7 +58,7 @@ onMounted(() => {
       trigger: ".black",
       scrub: true,
       pin: true,
-      start: () => "top top",
+      start: () => "top 130",
       end: () => "+=" + ((images.length + 1) * window.innerHeight),
       invalidateOnRefresh: true,
     });
@@ -69,10 +69,10 @@ onMounted(() => {
 <template>
   <section
     id="fourth-screen"
-    class="bg-foreground text-black py-16 lg:pb-24">
+    class="bg-foreground text-black py-16">
     <div class="black container grid grid-cols-1 xl:grid-cols-2 gap-28 xl:gap-8 justify-between">
       <div class="text-wrap grid gap-12 relative xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 w-full xl:h-[80vh]">
-        <div class="panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10">
+        <div class="panel-text bg-foreground xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-20 xl:translate-y-[80%] z-10">
           <h2 class="~text-[40px]/[48px] leading-[1.1] xl:text-[48px] font-extralight mb-8">
             <span class="text-primary">Современное и надежное</span> конструктивное решение
           </h2>
@@ -81,7 +81,7 @@ onMounted(() => {
             ориентирована на
             максимальную гибкость в решении различных исследовательских и рутинных задач</p>
         </div>
-        <div class="panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10">
+        <div class="panel-text bg-foreground xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10">
           <h2 class="~text-[40px]/[48px] leading-[1.1] xl:text-[48px] font-extralight mb-8">
             Доступные конфигурации проточного цитометра <span class="text-primary">CELLRIVER</span>
           </h2>
@@ -104,7 +104,7 @@ onMounted(() => {
             </li>
           </ul>
         </div>
-        <div class="panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10 flex flex-col xl:flex-row gap-8">
+        <div class="panel-text bg-foreground xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10 flex flex-col xl:flex-row gap-8">
           <div class="basis-1/2">
             <h2 class="~text-[18px]/[20px] leading-[1.1] mb-8 text-primary">
               Лавинные фотодиоды в качестве фотодетекторов
@@ -130,7 +130,7 @@ onMounted(() => {
             </ul>
           </div>
         </div>
-        <div class="panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10 flex flex-col xl:flex-row gap-8">
+        <div class="panel-text bg-foreground xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10 flex flex-col xl:flex-row gap-8">
           <div class="basis-1/2">
             <h2 class="~text-[18px]/[20px] leading-[1.1] mb-8 text-primary">
               Твердотельные лазеры
@@ -153,28 +153,28 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="p-wrap relative overflow-hidden top-0 h-[50vh] xl:h-[90vh] flex flex-col gap-8">
+      <div class="p-wrap relative overflow-hidden top-0 h-[50vh] xl:h-[80vh] flex flex-col gap-8">
         <NuxtImg
           format="webp"
-          class="panel absolute xl:top-[160px] left-0 w-full h-full object-cover"
+          class="panel absolute xl:top-0 left-0 w-full h-full object-cover"
           alt="Проточный цитометр CELLRIVER"
           title="Проточный цитометр CELLRIVER"
           src="/img/item-photo-2.webp"/>
         <NuxtImg
           format="webp"
-          class="panel absolute xl:top-[160px] left-0 w-full h-full z-10 object-cover"
+          class="panel absolute xl:top-0 left-0 w-full h-full z-10 object-cover"
           alt="Проточный цитометр CELLRIVER"
           title="Проточный цитометр CELLRIVER"
           src="/img/item-photo-6.webp"/>
         <NuxtImg
           format="webp"
-          class="panel absolute xl:top-[160px] left-0 w-full h-full object-cover"
+          class="panel absolute xl:top-0 left-0 w-full h-full object-cover"
           alt="Проточный цитометр CELLRIVER"
           title="Проточный цитометр CELLRIVER"
           src="/img/item-photo-7.webp"/>
         <NuxtImg
           format="webp"
-          class="panel purple absolute xl:top-[160px] left-0 w-full h-full z-10 object-cover"
+          class="panel purple absolute xl:top-0 left-0 w-full h-full z-10 object-cover"
           alt="Проточный цитометр CELLRIVER"
           title="Проточный цитометр CELLRIVER"
           src="/img/item-photo-8.webp"/>

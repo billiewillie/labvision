@@ -1,10 +1,10 @@
 const client_manifest = {
-  "_!~{006}~.js": {
+  "_!~{007}~.js": {
     "resourceType": "style",
     "prefetch": true,
     "preload": true,
-    "file": "RainbowButton.DQ0YeE-G.css",
-    "src": "_!~{006}~.js"
+    "file": "contactForm.DQ0YeE-G.css",
+    "src": "_!~{007}~.js"
   },
   "_BQkc-AXV.js": {
     "resourceType": "script",
@@ -14,22 +14,22 @@ const client_manifest = {
     "file": "BQkc-AXV.js",
     "name": "index"
   },
-  "_Dq_RmLrD.js": {
+  "_Cx3Fwfaq.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Dq_RmLrD.js",
-    "name": "RainbowButton",
+    "file": "Cx3Fwfaq.js",
+    "name": "contactForm.vue",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "css": [
-      "RainbowButton.DQ0YeE-G.css"
+      "contactForm.DQ0YeE-G.css"
     ]
   },
-  "RainbowButton.DQ0YeE-G.css": {
-    "file": "RainbowButton.DQ0YeE-G.css",
+  "contactForm.DQ0YeE-G.css": {
+    "file": "contactForm.DQ0YeE-G.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -39,7 +39,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BQhtkODM.js",
+    "file": "CBmHm8Vl.js",
     "name": "footer",
     "src": "components/app/footer.vue",
     "isDynamicEntry": true,
@@ -52,13 +52,13 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CsGKffEN.js",
+    "file": "H21QjR5h.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_Dq_RmLrD.js",
+      "_Cx3Fwfaq.js",
       "node_modules/nuxt-icon/dist/runtime/Icon.vue",
       "_BQkc-AXV.js"
     ],
@@ -66,11 +66,11 @@ const client_manifest = {
       "components/app/footer.vue"
     ],
     "css": [
-      "default.Betz209C.css"
+      "default.BJSXeUyJ.css"
     ]
   },
-  "default.Betz209C.css": {
-    "file": "default.Betz209C.css",
+  "default.BJSXeUyJ.css": {
+    "file": "default.BJSXeUyJ.css",
     "resourceType": "style",
     "prefetch": true,
     "preload": true
@@ -92,7 +92,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CxxvEuhu.js",
+    "file": "D7GUdVgC.js",
     "name": "Icon",
     "src": "node_modules/nuxt-icon/dist/runtime/Icon.vue",
     "isDynamicEntry": true,
@@ -113,7 +113,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BjsMRZRK.js",
+    "file": "DFGFr6nU.js",
     "name": "IconCSS",
     "src": "node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
     "isDynamicEntry": true,
@@ -134,37 +134,50 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DqspC2gP.js",
+    "file": "CF4lKSib.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
     "dynamicImports": [
       "layouts/default.vue"
     ],
-    "css": [
-      "entry.YfEHVwWx.css"
-    ],
     "_globalCSS": true
   },
-  "entry.YfEHVwWx.css": {
-    "file": "entry.YfEHVwWx.css",
-    "resourceType": "style",
+  "pages/contacts.vue": {
+    "resourceType": "script",
+    "module": true,
     "prefetch": true,
-    "preload": true
+    "preload": true,
+    "file": "CSTfwBeE.js",
+    "name": "contacts",
+    "src": "pages/contacts.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.js"
+    ]
   },
   "pages/index.vue": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "DQitmiBX.js",
+    "file": "BiGDgJFB.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_Dq_RmLrD.js",
-      "node_modules/nuxt/dist/app/entry.js"
+      "node_modules/nuxt/dist/app/entry.js",
+      "_Cx3Fwfaq.js"
+    ],
+    "css": [
+      "index.CBLJM4c-.css"
     ]
+  },
+  "index.CBLJM4c-.css": {
+    "file": "index.CBLJM4c-.css",
+    "resourceType": "style",
+    "prefetch": true,
+    "preload": true
   }
 };
 
