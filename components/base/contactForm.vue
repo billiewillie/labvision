@@ -62,7 +62,8 @@ const onSubmit = form.handleSubmit(async (values) => {
   if (responseData === '200') {
     form.resetForm()
     toast({
-      description: 'Заявка отправлена!'
+      description: 'Ваше сообщение отправлено!',
+      variant: 'success'
     })
     emit('closeDialog')
   } else {

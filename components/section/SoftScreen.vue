@@ -98,9 +98,23 @@ onMounted(() => {
             Возможность использования готовых протоколов сбора и анализа данных
           </h2>
           <p>для рутинных лабораторных исследований иммунного статуса:</p>
-          <ul class="list-disc pl-4 marker:text-primary">
-            <li>6-цветный протокол для подсчета Т-,B-,NK- лимфоцитов</li>
-            <li>4-цветный протокол для оценки количества CD4-и СD8-лимфоцитов</li>
+          <ul class="flex flex-col gap-4">
+            <li class="flex gap-4 items-center">
+              <NuxtImg
+                class="object-contain"
+                width="42"
+                height="42"
+                src="/icons/check.svg"/>
+              <p>6-цветный протокол для подсчета Т-,B-,NK- лимфоцитов</p>
+            </li>
+            <li class="flex gap-4 items-center">
+              <NuxtImg
+                class="object-contain"
+                width="42"
+                height="42"
+                src="/icons/check.svg"/>
+              <p>3 лазера, 14 флюоресцентных каналов детекции</p>
+            </li>
           </ul>
         </div>
         <div class="soft-panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10 flex flex-col gap-4">

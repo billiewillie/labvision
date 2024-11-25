@@ -14,6 +14,7 @@ export default defineNuxtConfig({
 		'@nuxtjs/google-fonts',
 		'nuxt-icon',
 		'nuxt-viewport',
+		'nuxt-marquee',
 	],
 	image: {
 		inject: true,

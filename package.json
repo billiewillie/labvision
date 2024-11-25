@@ -23,6 +23,7 @@
     "lenis": "^1.1.16",
     "lucide-vue-next": "^0.378.0",
     "nuxt": "^3.11.2",
+    "nuxt-marquee": "^1.0.4",
     "nuxt-viewport": "^2.1.5",
     "radix-vue": "^1.7.4",
     "shadcn-nuxt": "^0.10.4",

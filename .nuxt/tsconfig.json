@@ -148,6 +148,7 @@
     "../node_modules/@nuxtjs/google-fonts/runtime",
     "../node_modules/nuxt-icon/runtime",
     "../node_modules/nuxt-viewport/runtime",
+    "../node_modules/nuxt-marquee/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
@@ -162,6 +163,7 @@
     "../node_modules/@nuxtjs/google-fonts/runtime/server",
     "../node_modules/nuxt-icon/runtime/server",
     "../node_modules/nuxt-viewport/runtime/server",
+    "../node_modules/nuxt-marquee/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",

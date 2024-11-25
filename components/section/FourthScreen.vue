@@ -85,9 +85,23 @@ onMounted(() => {
           <h2 class="~text-[40px]/[48px] leading-[1.1] xl:text-[48px] font-extralight mb-8">
             Доступные конфигурации проточного цитометра <span class="text-primary">CELLRIVER</span>
           </h2>
-          <ul class="list-disc pl-4 marker:text-primary">
-            <li>2 лазера, 6 флюоресцентных каналов детекции</li>
-            <li>3 лазера, 14 флюоресцентных каналов детекции</li>
+          <ul class="flex flex-col gap-4">
+            <li class="flex gap-4 items-center">
+              <NuxtImg
+                class="object-contain"
+                width="42"
+                height="42"
+                src="/icons/check.svg"/>
+              <p>2 лазера, 6 флюоресцентных каналов детекции</p>
+            </li>
+            <li class="flex gap-4 items-center">
+              <NuxtImg
+                class="object-contain"
+                width="42"
+                height="42"
+                src="/icons/check.svg"/>
+              <p>3 лазера, 14 флюоресцентных каналов детекции</p>
+            </li>
           </ul>
         </div>
         <div class="panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 xl:w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10 flex flex-col xl:flex-row gap-8">

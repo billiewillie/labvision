@@ -6,6 +6,7 @@
 /// <reference types="@nuxtjs/google-fonts" />
 /// <reference types="nuxt-icon" />
 /// <reference types="nuxt-viewport" />
+/// <reference types="nuxt-marquee" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference types="nuxt" />
