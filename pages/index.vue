@@ -16,19 +16,7 @@
     <SectionMadeInRussiaScreen/>
 
     <!--video-->
-    <section class="py-16 lg:py-24 bg-foreground">
-      <div class="container">
-        <video
-          controls
-          muted
-          playsinline
-          poster="/img/first-screen-poster.webp">
-          <source
-            src="https://labvision.me/video/cellriver_production.mov"
-            type="video/mov">
-        </video>
-      </div>
-    </section>
+    <SectionVideoScreen/>
 
     <!--fifth screen-->
     <SectionFifthScreen/>
