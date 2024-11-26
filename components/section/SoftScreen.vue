@@ -48,7 +48,7 @@ onMounted(() => {
       })
 
       tl
-        .to(text, {duration: 0.33, opacity: 1, y: "40%"})
+        .to(text, {duration: 0.33, opacity: 1, y: "20%"})
         .to(text, {duration: 0.33, opacity: 0, y: "0%"}, 0.66)
     })
 
@@ -56,7 +56,7 @@ onMounted(() => {
       trigger: ".soft-black",
       scrub: true,
       pin: true,
-      start: () => "top top",
+      start: () => "top 130",
       end: () => "+=" + ((images.length + 1) * window.innerHeight),
       invalidateOnRefresh: true,
     });
@@ -67,33 +67,33 @@ onMounted(() => {
 <template>
   <section
     id="flowexpert"
-    class="py-24 scroll-mt-16 text-white">
+    class="py-24 xl:pt-24 xl:pb-0 scroll-mt-16 text-white">
     <div class="container soft-black grid grid-cols-1 xl:grid-cols-2 gap-8">
       <h2 class="~text-[32px]/[50px] xl:col-span-2 font-extralight leading-[1.1]">
         Программное обеспечение <span class="text-primary">FlowExpert</span>
       </h2>
-      <div class="flex relative overflow-hidden top-0 h-[40vh] xl:h-[80vh] flex-col gap-8">
+      <div class="flex relative overflow-hidden top-[60px] h-[40vh] xl:h-[60vh] flex-col gap-8">
         <NuxtImg
           format="webp"
-          class="soft-panel z-0 opacity-0 absolute xl:top-[120px] left-0 w-full h-full m-auto object-contain"
+          class="soft-panel z-0 opacity-0 absolute xl:top-0 left-0 w-full h-full m-auto object-contain"
           alt="Программное обеспечение FlowExpert"
           title="Программное обеспечение FlowExpert"
           src="/img/monitor.webp"/>
         <NuxtImg
           format="webp"
-          class="soft-panel z-0 opacity-0 absolute xl:top-[120px] left-0 w-full h-full m-auto object-contain"
+          class="soft-panel z-0 opacity-0 absolute xl:top-0 left-0 w-full h-full m-auto object-contain"
           alt="Программное обеспечение FlowExpert"
           title="Программное обеспечение FlowExpert"
           src="/img/monitor.webp"/>
         <NuxtImg
           format="webp"
-          class="soft-panel !z-10 soft-purple absolute xl:top-[120px] left-0 w-full h-full m-auto object-contain"
+          class="soft-panel !z-10 soft-purple absolute xl:top-0 left-0 w-full h-full m-auto object-contain"
           alt="Программное обеспечение FlowExpert"
           title="Программное обеспечение FlowExpert"
           src="/img/monitor.webp"/>
       </div>
       <div class="soft-text-wrap relative flex flex-col gap-12 xl:top-0 left-0 right-0 bottom-0 w-full xl:h-[80vh] xl:pl-8">
-        <div class="soft-panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 w-full xl:h-full xl:opacity-0 xl:translate-y-full z-10 flex flex-col gap-4">
+        <div class="soft-panel-text xl:absolute xl:top-0 xl:left-0 xl:right-0 xl:bottom-0 w-full xl:h-full xl:opacity-20 xl:translate-y-[80%] z-10 flex flex-col gap-4">
           <h2 class="~text-[28px]/[40px] leading-[1.1] font-extralight">
             Возможность использования готовых протоколов сбора и анализа данных
           </h2>

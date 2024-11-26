@@ -15,6 +15,21 @@
     <!--made in russia screen-->
     <SectionMadeInRussiaScreen/>
 
+    <!--video-->
+    <section class="py-16 lg:py-24 bg-foreground">
+      <div class="container">
+        <video
+          controls
+          muted
+          playsinline
+          poster="/img/first-screen-poster.webp">
+          <source
+            src="https://labvision.me/video/cellriver_production.mov"
+            type="video/mov">
+        </video>
+      </div>
+    </section>
+
     <!--fifth screen-->
     <SectionFifthScreen/>
 
@@ -27,16 +42,10 @@
     <!--service-->
     <SectionServiceScreen/>
 
-    <section class="bg-foreground">
-      <NuxtMarquee class="py-16 gap-24">
-        <p class="uppercase drop-shadow-[0_0_15px_rgba(0,0,0,0.7)] text-[70px] xl:text-[90px] font-black">Доступен для вашей лаборатории прямо
-          сейчас</p>
-      </NuxtMarquee>
-    </section>
+    <!--marquee-->
+    <SectionMarqueeScreen/>
 
     <!--contacts-->
     <SectionContactsScreen/>
   </main>
 </template>
-<script setup>
-</script>
