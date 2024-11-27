@@ -67,12 +67,12 @@ onMounted(() => {
 <template>
   <section
     id="flowexpert"
-    class="py-24 xl:pt-24 xl:pb-0 scroll-mt-16 text-white">
+    class="py-16 xl:pt-24 xl:pb-0 scroll-mt-16 text-white">
     <div class="container soft-black grid grid-cols-1 xl:grid-cols-2 gap-8">
       <h2 class="~text-[32px]/[50px] xl:col-span-2 font-extralight leading-[1.1]">
         Программное обеспечение <span class="text-primary">FlowExpert</span>
       </h2>
-      <div class="flex relative overflow-hidden top-[60px] h-[40vh] xl:h-[60vh] flex-col gap-8">
+      <div class="flex relative overflow-hidden xl:top-[60px] h-[40vh] xl:h-[60vh] flex-col gap-8">
         <NuxtImg
           format="webp"
           class="soft-panel z-0 opacity-0 absolute xl:top-0 left-0 w-full h-full m-auto object-contain"

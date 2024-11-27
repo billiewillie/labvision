@@ -1,0 +1,1 @@
+import{d as s,o as a,c as o,a as e,a4 as n,Q as c}from"./BBm2_2Fp.js";const r={class:"text-white py-12"},i={class:"container flex justify-end"},_={class:"opacity-60 text-[18px] font-extralight"},u=s({__name:"footer",setup(l){const t=new Date().getFullYear();return(p,f)=>(a(),o("footer",r,[e("div",i,[e("span",_," Labvision "+n(c(t))+" © ",1)])]))}});export{u as default};

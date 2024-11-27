@@ -9,6 +9,7 @@ const {$viewport} = useNuxtApp()
 watch($viewport.breakpoint, (newBreakpoint, oldBreakpoint) => {
   console.log('Breakpoint updated:', oldBreakpoint, '->', newBreakpoint)
 })
+
 onMounted(() => {
   if (
     $viewport.breakpoint.dep?.computed.value === 'desktop'
@@ -182,3 +183,9 @@ onMounted(() => {
     </div>
   </section>
 </template>
+
+<style>
+.pin-spacer {
+  margin: 0 auto !important;
+}
+</style>

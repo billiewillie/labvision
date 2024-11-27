@@ -1,19 +1,16 @@
 <script
   setup
   lang="ts">
-const isPlaying = ref<boolean>(false)
+const isPlaying = ref<boolean>(true)
 const video = ref<HTMLVideoElement | null>(null)
 
 function toggleVideo(e: any) {
-  console.log(isPlaying.value)
-  if (isPlaying.value) {
-    isPlaying.value = false
-    video.value?.pause()
-  } else {
-    isPlaying.value = true
+  if (!isPlaying.value) {
     video.value?.play()
+  } else {
+    video.value?.pause()
   }
-  console.log(isPlaying.value)
+  isPlaying.value = !isPlaying.value
 }
 </script>
 
@@ -30,17 +27,6 @@ function toggleVideo(e: any) {
           src="https://labvision.me/video/labvision_postproduction.mp4"
           type="video/mp4">
       </video>
-      <div
-        v-if="!isPlaying"
-        @click="video?.play(); isPlaying = true"
-        class="grid place-items-center w-12 h-12 border-black border-2 cursor-pointer rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <Icon
-          name="mdi:play"
-          style="color: black"
-          width="40"
-          height="40"
-          class=""/>
-      </div>
     </div>
   </section>
 </template>

@@ -21,6 +21,11 @@ const isContactFormModalOpen = ref(false)
         width="118"
         class="lg:mx-auto w-[96px] xl:w-[118px]"/>
     </NuxtLink>
+    <a
+      href="tel:88005508357"
+      class="inline-flex w-auto ~text-[16px]/[20px] 2xl:hidden font-bold">
+      8 800 550 83 57
+    </a>
     <ul class="hidden 2xl:flex gap-8">
       <li
         v-for="item in NAVIGATION"
