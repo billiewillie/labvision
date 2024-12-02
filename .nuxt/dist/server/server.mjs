@@ -559,7 +559,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: __nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect,
-    component: () => import("./_nuxt/index-CSh01ylU.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/index-BNY7NYD6.js").then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -873,8 +873,8 @@ const revive_payload_server_eJ33V7gbc6 = /* @__PURE__ */ defineNuxtPlugin({
     }
   }
 });
-const LazyIcon = defineAsyncComponent(() => import("./_nuxt/Icon-qN4YhgFI.js").then((r) => r["default"] || r.default || r));
-const LazyIconCSS = defineAsyncComponent(() => import("./_nuxt/IconCSS-lKdlZZcG.js").then((r) => r["default"] || r.default || r));
+const LazyIcon = defineAsyncComponent(() => import("./_nuxt/Icon-Cg8_0pN8.js").then((r) => r["default"] || r.default || r));
+const LazyIconCSS = defineAsyncComponent(() => import("./_nuxt/IconCSS-CvUqqcd8.js").then((r) => r["default"] || r.default || r));
 const lazyGlobalComponents = [
   ["Icon", LazyIcon],
   ["IconCSS", LazyIconCSS]
@@ -1499,7 +1499,7 @@ const plugins = [
   gsap_qE0fizvEy0
 ];
 const layouts = {
-  default: () => import("./_nuxt/default-BEAsveFk.js").then((m) => m.default || m)
+  default: () => import("./_nuxt/default-DRzpLsh4.js").then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",

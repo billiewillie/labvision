@@ -14,12 +14,12 @@
     "file": "BQkc-AXV.js",
     "name": "index"
   },
-  "_Cx5SIRZV.js": {
+  "_DDxuI5Ox.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "Cx5SIRZV.js",
+    "file": "DDxuI5Ox.js",
     "name": "contactForm.vue",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
@@ -39,7 +39,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "CLEVs-SU.js",
+    "file": "DMbSd8vC.js",
     "name": "footer",
     "src": "components/app/footer.vue",
     "isDynamicEntry": true,
@@ -52,13 +52,13 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BRECIYtC.js",
+    "file": "8Hf46EJK.js",
     "name": "default",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_Cx5SIRZV.js",
+      "_DDxuI5Ox.js",
       "node_modules/nuxt-icon/dist/runtime/Icon.vue",
       "_BQkc-AXV.js"
     ],
@@ -92,7 +92,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "B1WneJmm.js",
+    "file": "BaKVL_SI.js",
     "name": "Icon",
     "src": "node_modules/nuxt-icon/dist/runtime/Icon.vue",
     "isDynamicEntry": true,
@@ -113,7 +113,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "B3_79-MD.js",
+    "file": "DjQlNK95.js",
     "name": "IconCSS",
     "src": "node_modules/nuxt-icon/dist/runtime/IconCSS.vue",
     "isDynamicEntry": true,
@@ -134,7 +134,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BBm2_2Fp.js",
+    "file": "BBfjFY1K.js",
     "name": "entry",
     "src": "node_modules/nuxt/dist/app/entry.js",
     "isEntry": true,
@@ -148,7 +148,7 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "BJn4XOEZ.js",
+    "file": "B3m7dy6F.js",
     "name": "contacts",
     "src": "pages/contacts.vue",
     "isDynamicEntry": true,
@@ -161,13 +161,13 @@
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "aBqH3b7o.js",
+    "file": "BP1a708u.js",
     "name": "index",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_Cx5SIRZV.js"
+      "_DDxuI5Ox.js"
     ],
     "css": [
       "index.DxEONeF4.css"

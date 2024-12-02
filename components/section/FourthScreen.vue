@@ -2,6 +2,14 @@
   setup
   lang="ts">
 import {onMounted, watch} from "vue";
+import {toast} from "~/components/ui/toast";
+
+function downloadPDF() {
+  toast({
+    description: 'PDF успешно скачан!',
+    variant: 'success'
+  })
+}
 
 const {$gsap, $ScrollTrigger} = useNuxtApp()
 const {$viewport} = useNuxtApp()
@@ -154,31 +162,46 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="p-wrap relative overflow-hidden top-0 h-[50vh] xl:h-[80vh] flex flex-col gap-8">
-        <NuxtImg
-          format="webp"
-          class="panel absolute xl:top-0 left-0 w-full h-full object-cover"
-          alt="Проточный цитометр CELLRIVER"
-          title="Проточный цитометр CELLRIVER"
-          src="/img/item-photo-2.webp"/>
-        <NuxtImg
-          format="webp"
-          class="panel absolute xl:top-0 left-0 w-full h-full z-10 object-cover"
-          alt="Проточный цитометр CELLRIVER"
-          title="Проточный цитометр CELLRIVER"
-          src="/img/item-photo-6.webp"/>
-        <NuxtImg
-          format="webp"
-          class="panel absolute xl:top-0 left-0 w-full h-full object-cover"
-          alt="Проточный цитометр CELLRIVER"
-          title="Проточный цитометр CELLRIVER"
-          src="/img/item-photo-7.webp"/>
-        <NuxtImg
-          format="webp"
-          class="panel purple absolute xl:top-0 left-0 w-full h-full z-10 object-cover"
-          alt="Проточный цитометр CELLRIVER"
-          title="Проточный цитометр CELLRIVER"
-          src="/img/item-photo-8.webp"/>
+      <div class="flex flex-col gap-8">
+        <div class="p-wrap relative overflow-hidden top-0 h-[50vh] xl:h-[70vh]">
+          <NuxtImg
+            format="webp"
+            class="panel absolute xl:top-0 left-0 w-full h-full object-cover"
+            alt="Проточный цитометр CELLRIVER"
+            title="Проточный цитометр CELLRIVER"
+            src="/img/item-photo-2.webp"/>
+          <NuxtImg
+            format="webp"
+            class="panel absolute xl:top-0 left-0 w-full h-full z-10 object-cover"
+            alt="Проточный цитометр CELLRIVER"
+            title="Проточный цитометр CELLRIVER"
+            src="/img/item-photo-6.webp"/>
+          <NuxtImg
+            format="webp"
+            class="panel absolute xl:top-0 left-0 w-full h-full object-cover"
+            alt="Проточный цитометр CELLRIVER"
+            title="Проточный цитометр CELLRIVER"
+            src="/img/item-photo-7.webp"/>
+          <NuxtImg
+            format="webp"
+            class="panel purple absolute xl:top-0 left-0 w-full h-full z-10 object-cover"
+            alt="Проточный цитометр CELLRIVER"
+            title="Проточный цитометр CELLRIVER"
+            src="/img/item-photo-8.webp"/>
+        </div>
+        <div class="flex md:flex-row items-center gap-4 justify-start">
+          <p>Техническая спецификация</p>
+          <a
+            download
+            @click="downloadPDF"
+            target="_blank"
+            href="/pdf/Cellriver_Spezificazia_2024.pdf">
+            <BaseRainbowButton
+              variant="black">
+              Скачать PDF
+            </BaseRainbowButton>
+          </a>
+        </div>
       </div>
     </div>
   </section>
