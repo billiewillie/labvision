@@ -32,4 +32,5 @@ export { isRouteActive } from '../utils/isRouteActive';
 export { setResultOutput } from '../utils/setResultOutput';
 export { useImage } from '../node_modules/@nuxt/image/dist/runtime/composables';
 export { useViewport } from '../node_modules/nuxt-viewport/dist/runtime/composables';
+export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';

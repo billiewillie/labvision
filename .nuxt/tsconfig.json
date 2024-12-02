@@ -87,7 +87,7 @@
         "../node_modules/@nuxt/image/dist/runtime/*"
       ],
       "#icon-collections": [
-        "./icon-collections.mjs"
+        "./icon-collections"
       ],
       "#viewport-options": [
         "./viewport-options.mjs"
@@ -101,8 +101,11 @@
       "#tailwind-config": [
         "./tailwind.config"
       ],
+      "#tailwind-config/*": [
+        "./tailwind.config/*"
+      ],
       "#app-manifest": [
-        "./manifest/meta/5cff2362-a9bf-4d50-9703-251baa1a79d8.json"
+        "./manifest/meta/dev"
       ],
       "#build": [
         "."
